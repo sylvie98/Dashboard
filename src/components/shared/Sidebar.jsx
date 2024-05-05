@@ -1,43 +1,55 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { TbDashboard } from "react-icons/tb";
+import { TbKey } from "react-icons/tb";
+import { TbTypography } from "react-icons/tb";
+import { MdOutlineColorLens } from "react-icons/md";
+import { TbShadow } from "react-icons/tb";
+import { CiCircleQuestion } from "react-icons/ci";
 
 
 const Sidebar = () => {
   return (
-    <div className='flex flex-col bg-gray-50 p-4 font-serif'>
-        <div className='flex items-center px-1 py-3 gap-2'>
-            <span className=' text-lg'>BERRY</span>
-        </div>
-       
+    <div className='flex flex-col  p-4 font-serif gap-5'>
         <div className=' flex-1'> 
           <div>
             <h2>Dashboard</h2>
-            <div className='p-5'>
-              <Link to={"/"}><span className=' text-lg hover: hover:bg-pink-200 '>Dashboard</span></Link> 
+            <div className='relative p-5'>
+              <Link to={"/"}><TbDashboard  className=' absolute top-8 -translate-y-1/2'/><span className=' p-5 text-lg hover: hover:bg-pink-200 focus:outline-none active:outline-none'>Dashboard</span></Link> 
             </div>
           </div>
           <hr></hr>
           <div>
             <h2>Pages</h2>
-            <Link to={"/Pages"}>
-            <div className='p-5'>
-               <span className=' text-lg hover: hover:bg-pink-200 '>Authentication</span>
+            <p className='text-sm text-gray-400'>Page Caption</p>
+            <div className='relative p-5'>
+              <Link to={"/Pages"}><TbKey className=' absolute top-8 -translate-y-1/2' /><span className=' text-lg hover: hover:bg-pink-200 focus:outline-none active:outline-none p-6'>Authentication</span> </Link>
             </div>
-            </Link>
+           
           </div>
           <hr></hr>
-          <div >
+          <div>
             <h2>Utilities</h2>
-            <div className='flex flex-col p-5 gap-4 '>
-            <Link to={"/Typography"}><span className=' text-lg hover:bg-pink-200'>Typography</span></Link>
-            <Link to={"/Color"}><span className=' text-lg hover:bg-pink-200'>Color</span></Link>
-            <Link to={"/Shadow"}><span className=' text-lg hover:bg-pink-200'>Shadow</span></Link>
+            <div className='flex flex-col p-5 gap-4'>
+              <div className='relative'>
+                <Link to={"/Typography"}><TbTypography className=' absolute top-3 -translate-y-1/2' /><span className=' text-lg hover:bg-pink-200 focus:outline-none active:outline-none p-6'>Typography</span></Link>
+              </div>
+              <div className='relative'>
+                <Link to={"/Color"}><MdOutlineColorLens className=' absolute top-3 -translate-y-1/2' /><span className=' text-lg hover:bg-pink-200 focus:outline-none active:outline-none p-6'>Color</span></Link>
+              </div>
+              <div className='relative'>
+                <Link to={"/Shadow"}><TbShadow className=' absolute top-3 -translate-y-1/2' /><span className=' text-lg hover:bg-pink-200 focus:outline-none active:outline-none p-6'>Shadow</span></Link>
+              </div>
             </div>
           </div>
           <hr></hr>
-          <div className='flex flex-col p-5 gap-4'>
-          <Link to={"/Samepage"}><span className=' text-lg hover: hover:bg-pink-200'>Sample Page</span></Link>
-          <Link to={""}><span className=' text-lg hover: hover:bg-pink-200'>Documentation</span></Link>
+          <div className='flex flex-col p-5 gap-4 '>
+            <div className='relative'>
+              <Link to={"/Samepage"}><span className=' text-lg hover: hover:bg-pink-200 focus:outline-none active:outline-none p-6'>Sample Page</span></Link>
+            </div>
+            <div className='relative'>
+             <Link to={""}><CiCircleQuestion className=' absolute top-3 -translate-y-1/2'/><span className=' text-lg hover: hover:bg-pink-200 focus:outline-none active:outline-none p-6'>Documentation</span></Link>
+            </div>
           </div>
           <hr></hr>
         </div>
