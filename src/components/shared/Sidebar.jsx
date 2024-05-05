@@ -6,6 +6,7 @@ import { TbTypography } from "react-icons/tb";
 import { MdOutlineColorLens } from "react-icons/md";
 import { TbShadow } from "react-icons/tb";
 import { CiCircleQuestion } from "react-icons/ci";
+import { Popover } from '@headlessui/react'
 
 
 const Sidebar = () => {
