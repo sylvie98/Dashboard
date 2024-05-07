@@ -1,9 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import DashboardStatsGrid from './DashboardStatsGrid'
+import TransactionChart from './TransactionChart'
+import BuyerProfilePieChart from './BuyerChart'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard page </div>
+    <div className='flex gap-4 flex-col px-5'>
+      <DashboardStatsGrid/>
+      <TransactionChart/>
+      {/* <BuyerProfilePieChart/> */}
+     </div>
   )
 }
 
