@@ -13,7 +13,7 @@ const TransactionChart = () => {
 
         <Chart
           type="bar"
-          width={1200}
+          width={550}
           height={700}
           series={[
             {
