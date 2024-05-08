@@ -12,7 +12,7 @@ import { Popover } from '@headlessui/react'
 const Sidebar = () => {
   return (
     <div className='flex flex-col  p-4 font-sans gap-5'>
-        <div className=' flex-1'> 
+        <div className=''> 
           <div>
             <h2>Dashboard</h2>
             <div className='relative p-5'>

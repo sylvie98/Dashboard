@@ -7,8 +7,8 @@ import { TbCalendarWeek } from 'react-icons/tb'
 
 const DashboardStatsGrid = () => {
   return (
-    <div className='flex gap-4 w-ful'>
-        <div className=' bg-purple-800 rounded-lg border border-gray-200 flex-1'>
+    <div className='grid  lg:grid-cols-3 grid-cols-1 w-full'>
+        <div className=' bg-purple-800 rounded-lg border border-gray-200 flex-1 w-[23rem]'>
             <div className=' text-2xl text-white flex flex-col gap-5 p-5'>
                 <div className='flex justify-between'>
                     <LuCopy/>
@@ -23,7 +23,7 @@ const DashboardStatsGrid = () => {
            </div>
                 
         </div>
-        <div className=' bg-blue-400 rounded-lg border border-gray-200 flex-1'>
+        <div className=' bg-blue-400 rounded-lg border border-gray-200 flex-1 w-[23rem]'>
             <div className=' text-2xl text-white flex flex-col gap-5'>
                 <div className='flex justify-between'>
                     <PiLockKeyThin/>
@@ -40,7 +40,7 @@ const DashboardStatsGrid = () => {
            </div>
         </div>
         <div className='flex flex-col gap-6'>
-            <div className=' bg-blue-400 rounded-lg  border border-gray-200  flex-1'>
+            <div className=' bg-blue-400 rounded-xl  border border-gray-200  flex-1 w-[23rem] h-[10rem]'>
                <div className=' text-xl text-white flex flex-col gap-5 p-5'>
                    <div className='flex gap-3'>
                         <TbCalendarWeek className=' bg-blue-950 text-2xl'/>
@@ -51,7 +51,7 @@ const DashboardStatsGrid = () => {
                     </div>
                 </div>
             </div>
-            <div className=' bg-white rounded-lg  border border-gray-200 flex items-center'>
+            <div className=' bg-white rounded-lg  border border-gray-200 flex items-center w-[23rem]'>
             
                <div className=' text-xl text-black flex flex-col gap-5 p-5'>
                    <div className='flex gap-3'>

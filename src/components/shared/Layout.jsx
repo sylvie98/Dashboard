@@ -6,7 +6,7 @@ export default function Layout () {
   return (
     <div className=''>
        <Header/>
-       <div className='flex'>
+       <div className='flex w-full'>
       <Sidebar/>
       <div className=' bg-gray-50 w-full'>
       <div>{<Outlet/>}</div>
