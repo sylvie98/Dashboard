@@ -12,9 +12,9 @@ import { CiSettings } from 'react-icons/ci';
 const Header = () => {
   return (
     <div className='bg-white h-16 px-4 flex justify-between items-center shadow-lg'>
-      <div className=' relative'>
-        <FaRaspberryPi className=' absolute top-4 -translate-y-1/2 text-purple-500' />
-        <span className='text-lg focus:outline-none active:outline-none h-10 w-[24rem] p-5'>BERRY</span>
+      <div>
+      <a href="#">
+            < img src="/image.jpeg" class=" w-14 pl-5 py-8"/></a>
         
       </div>
       <IoIosMenu className=' text-purple-500 text-2xl'/>
