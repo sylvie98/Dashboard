@@ -5,10 +5,12 @@ import Header from './Header'
 export default function Layout () {
   return (
     <div className=''>
-       <Header/>
+       
        <div className='flex w-full'>
       <Sidebar/>
+     
       <div className=' bg-gray-50 w-full'>
+      <Header/>
       <div>{<Outlet/>}</div>
     </div>
     </div>
